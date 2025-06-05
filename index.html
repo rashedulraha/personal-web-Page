@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="shortcut icon" href="./images/r" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAHA | Home</title>
+    <link rel="stylesheet" href="tailwind.config.js" />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav
+      class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between bg-white bg-opacity-50 z-50"
+    >
+      <img
+        class="w-28 cursor-pointer mr-14"
+        src="./images/raha.svg"
+        alt="RAHA Logo"
+      />
+      <ul
+        class="hidden md:flex gap-6 lg:gap-8 rounded-full border shadow-sm px-12 py-3"
+      >
+        <li>
+          <a
+            class="selection:text-[#3552e7] hover:text-transparent bg-clip-text bg-gradient-to-r from-[#b820e6] to-[#4d6bfe]"
+            href="#top"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="selection:text-[#3552e7] hover:text-transparent bg-clip-text bg-gradient-to-r from-[#b820e6] to-[#4d6bfe]"
+            href="#about"
+            >About Me</a
+          >
+        </li>
+        <li>
+          <a
+            class="selection:text-[#3552e7] hover:text-transparent bg-clip-text bg-gradient-to-r from-[#b820e6] to-[#4d6bfe]"
+            href="#service"
+            >Service</a
+          >
+        </li>
+        <li>
+          <a
+            class="selection:text-[#3552e7] hover:text-transparent bg-clip-text bg-gradient-to-r from-[#b820e6] to-[#4d6bfe]"
+            href="#contact"
+            >Contact Me</a
+          >
+        </li>
+      </ul>
+      <div class="flex items-center">
+        <img
+          class="w-6 ml-12 md:ml-0"
+          src="./images/moon_icon.png"
+          alt="Toggle Theme"
+        />
+        <a
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-[#4d6bfe] rounded-full ml-4 hover:text-transparent bg-clip-text bg-gradient-to-r from-[#b820e6] to-[#4d6bfe]"
+          href="#contact"
+        >
+          Contact
+          <img class="w-3" src="./images/arrow-icon.png" alt="Arrow Icon" />
+        </a>
+        <button class="block md:hidden ml-4" onclick="openMenu()">
+          <img class="w-6" src="./images/menu-black.png" alt="Menu Icon" />
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <ul
+        id="side-menu"
+        class="flex md:hidden flex-col gap-2 py-20 px-0 fixed -right-64 top-0 bottom-0 w-64 h-screen bg-rose-50 transition duration-500 z-50"
+      >
+        <li class="absolute top-6 right-6 cursor-pointer" onclick="closeMenu()">
+          <div>
+            <img
+              class="w-5 z-50"
+              src="./images/close-black.png"
+              alt="Close Menu"
+            />
+          </div>
+        </li>
+        <li>
+          <a
+            class="block px-10 py-2 selection:text-[#3552e7] transition hover:bg-rose-100 hover:text-[#4d6bfe]"
+            onclick="closeMenu()"
+            href="#top"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="block px-10 py-2 selection:text-[#3552e7] transition hover:bg-rose-100 hover:text-[#4d6bfe]"
+            onclick="closeMenu()"
+            href="#about"
+            >About Me</a
+          >
+        </li>
+        <li>
+          <a
+            class="block px-10 transition py-2 selection:text-[#3552e7] hover:bg-rose-100 hover:text-[#4d6bfe]"
+            onclick="closeMenu()"
+            href="#service"
+            >Service</a
+          >
+        </li>
+        <li>
+          <a
+            class="block px-10 transition py-2 hover:bg-rose-100 hover:text-[#4d6bfe selection:text-[#3552e7]"
+            onclick="closeMenu()"
+            href="#contact"
+            >Contact Me</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ? header section -->
+    <div
+      class="mx-w-[87%] w-11/12 text-wrap text-center mx-auto flex flex-col items-center justify-center gap-4 h-screen pt-10"
+    >
+      <div
+        class="picture w-32 h-32 border-2 border-[#212121] overflow-hidden rounded-full"
+      >
+        <img src="./images/rahaAthr.jpg" alt="" Rashedul Islam />
+      </div>
+      <div class="profile-contetn flex flex-col">
+        <h3
+          class="font-[sora] flex items-center justify-center gap-2 text-xl md:text-2xl mb-3selection:bg-[#8c9be6] selection:text-[#3552e7]"
+        >
+          Hi! I'm Rashedul Islam
+          <img src="./images/hand-icon.png" alt="Hand icon" class="w-6" />
+        </h3>
+        <h1
+          class="selection:text-[#3552e7] font-[sora] text-[30px] sm:text-4xl lg:text-[55px]"
+        >
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-[#b820e6] to-[#4d6bfe]"
+          >
+            Frontend web developer in Bangladesh</span
+          >
+        </h1>
+        <p
+          class="selection:text-[#3552e7] font-[sora] max-w-2xl mx-auto mt-6 text-base text-gray-500"
+        >
+          I'm Frontend developer from Bangladesh .With 10 year experience in
+          multiple companies line microsoft,tesla and apple
+        </p>
+      </div>
+      <!--?----------------------- btn --------------------------------->
+
+      <div class="flex gap-3 items-center">
+        <div>
+          <a
+            href="#contact"
+            class="px-10 py-3 border border-[#4d6bfe] rounded-full bg-gradient-to-r from-[#b820e6] to-[#4d6bfe] text-white flex items-center gap-2 hover:bg-gradient-to-r hover:from-[#4d6bfe] hover:to-[#b820e6] transition"
+          >
+            Contact
+            <img src="./images/right-arrow-white.png" alt="" class="w-4" />
+          </a>
+        </div>
+
+        <div>
+          <a
+            href="#contact"
+            class="px-10 py-3 border border-[#4d6bfe] rounded-full text-[#4d6bfe] flex items-center gap-2"
+          >
+            Download
+            <img src="./images/download-icon.png" alt="" class="w-4" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ?---------------about me------------------ -->
+    <div id="about" class="w-full px-[1%] py-10 scroll-mt-10">
+      <h4 class="font-[sora] text-center mb-2 text-lg selection:text-[#3552e7]">
+        Introduction
+      </h4>
+      <h2 class="text-center text-5xl font-[sora] selection:text-[#3552e7]">
+        About Me
+      </h2>
+
+      <div
+        class="flex w-[75%] mx-auto flex-col lg:flex-row items-center gap-20 my-20"
+      >
+        <div class="max-w-max mx-auto relative">
+          <img
+            src="./images/rahaAthr.jpg"
+            alt=""
+            class="w-64 sm:w-80 rounded-3xl max-w-none"
+          />
+
+          <!-- ?---------------------------------------- circle -->
+
+          <div
+            class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-md flex items-center justify-center"
+          >
+            <img
+              src="./images/circular-text.png"
+              class="w-full animate-spin delay-500"
+              style="animation-duration: 6s"
+              alt=""
+            />
+            <img
+              src="images/dev-icon.png"
+              alt=""
+              class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            />
+          </div>
+        </div>
+        <div class="flex-1">
+          <h4 class="font-[sora] text-[30px] mb-4 selection:text-[#3552e7]">
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-[#b820e6] to-[#4d6bfe]"
+            >
+              | Frontend Developer | 3+ Years Experience |
+            </span>
+          </h4>
+          <p
+            class="mb-10 max-w-2xl font-[sora] selection:text-[#3552e7] text-gray-500"
+          >
+            I'm a passionate Frontend Developer from Bangladesh with over 10
+            years of professional experience in building modern, responsive, and
+            user-focused web applications.
+          </p>
+          <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+            <li
+              class="border-[0.5px] border-gray-400 p-3 cursor-pointer rounded-xl hover:bg-gradient-to-r from-[#ddb7e8] to-[#bac2e8] hover:-translate-y-1 duration-500 hover:shadow-[2px_2px_0_#b820e6]"
+            >
+              <img src="./images/code-icon.png" class="mt-3 w-7" alt="" />
+              <h3 class="font-[sora] my-4 font-semibold text-gray-700">
+                Language
+              </h3>
+              <p class="font-[sora] text-gray-500 text-sm">
+                React, Next js , Go , c++
+              </p>
+            </li>
+
+            <li
+              class="border-[0.5px] border-gray-400 p-3 cursor-pointer rounded-xl hover:bg-gradient-to-r from-[#ddb7e8] to-[#bac2e8] hover:-translate-y-1 duration-500 hover:shadow-[2px_2px_0_#b820e6]"
+            >
+              <img src="./images/edu-icon.png" class="mt-3 w-7" alt="" />
+              <h3 class="my-4 font-[sora] font-semibold text-gray-700">
+                Education
+              </h3>
+              <p class="font-[sora] text-gray-500 text-sm">
+                Bachelor’s Degree in Computer Science
+              </p>
+            </li>
+
+            <li
+              class="border-[0.5px] border-gray-400 p-3 cursor-pointer rounded-xl hover:bg-gradient-to-r from-[#ddb7e8] to-[#bac2e8] hover:-translate-y-1 duration-500 hover:shadow-[2px_2px_0_#b820e6]"
+            >
+              <img src="./images/project-icon.png" class="mt-3 w-7" alt="" />
+              <h3 class="my-4 font-semibold text-gray-700">Project</h3>
+              <p class="font-[sora] text-gray-500 text-sm">
+                A modern, responsive website
+              </p>
+            </li>
+          </ul>
+          <h4 class="font-[sora] my-4 font-medium text-gray-700">
+            Tools i Use
+          </h4>
+
+          <ul class="flex items-center gap-3 sm:gap-5">
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+            >
+              <img class="w-5 sm:w-7" src="images/vscode.png" alt="" />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+            >
+              <img class="w-5 sm:w-7" src="images/mongodb.png" alt="" />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+            >
+              <img class="w-5 sm:w-7" src="images/figma.png" alt="" />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+            >
+              <img class="w-5 sm:w-7" src="images/firebase.png" alt="" />
+            </li>
+
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+            >
+              <img class="w-5 sm:w-7" src="images/git.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
